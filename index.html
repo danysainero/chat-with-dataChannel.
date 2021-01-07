@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RTCDataChannel</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <div class="offer-container">
+    <div class="button-container">
+      <button id="button" onclick="createOffer()"> Create Offer:</button>
+    </div>
+    <textarea id="offer" readonly></textarea>
+  </div>
+
+  <div class="answer-container">
+    <div class="button-container">
+      <button id="answerButton" onclick="createAnswer()">Check Answer:</button>
+    </div>
+    <textarea id="answer" placeholder="Paste answer here"></textarea>
+  </div>
+
+  
+  <div>
+    <p>Connection: <span id="spanConnection"></span> </p>
+  </div>
+
+  <div>
+  <input id="chat">
+    <button id="sendButton" onclick="send()">Send</button>
+  </div>
+
+  <div class="chat-container">
+    <h2>Chat </h2>
+    <div class="msg-container"><div id="message"></div></div>
+    
+  </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
